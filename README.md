@@ -32,10 +32,27 @@ The following function and methods were used in this problem:
 - `np.random.seed()` - used to initialize the random number generator
   
 - `np.mean()` - built in function used to get the arithmetic mean of the chosen variable
+     Example:
+  ```python
+  a = np.array([1,2,3])
+  b = int(np.mean(a))
+  b
+
+  #result: 2
+  #int was used to make the result as integer / whole number
+  ```
 
 - `np.std()` - built in function used to get the standard deviation of the chosen variable
+     Example:
+  ```python
+  c = int(np.std(a))
+  c
 
-- `np.save(a,b)` - used to save an array to a binary file in .npy format
+  #result: 0
+  #int was used to make the result as integer / whole number
+  ```
+
+- `np.save('file name', array)` - used to save an array to a binary file in .npy format
 
 These methods were used to create a single function that generates a random 5 × 5 integer array and gets the mean, standard deviation, and the X_normalized (Z-score):
 ```python
@@ -65,12 +82,37 @@ Use a Boolean condition on C to obtain every cubed value divisible by 4. Store t
 
 The following function and methods were used in this problem:
 - `np.arange(a, b, c)` - used to get the integers from a up to b (excluding b) and in c increments
+    Example:
+  ```python
+  a = np.arange(2,10,2)
+  a
+
+  #result: array([2, 4, 6, 8])
+  ```
 
 - `.reshape(a,b)` - rearranges array to a rows and b columns
+      Example:
+  ```python
+  b = np.array([(1,2,3),(4,5,6)])
+  b = b.reshape(6,1).shape
+  b
+
+  #result: (6, 1)
+  ```
 
 - `A[equation]` - boolean condition where gets the A array and evaluates the equation enclosed in square brackets which will produce boolean values in the exact shape of A.
+    Example:
+  ```python
+  c = np.array([(1,2,3),(4,5,6)])
+  d = c[c % 3 == 0]
+    #[(False, False, True), (False, False, True)]
 
-- `np.save(a,b)` - used to save an array to a binary file in .npy format
+  print(d)
+
+  #result: [3 6]
+  ```
+
+- `np.save('file name', array)` - used to save an array to a binary file in .npy format
 
 These methods were used to create a single function that gets the cube of the first 100 positive integers in a 10 × 10 ndarray and prints the elements divisible by 4:
 ```python
@@ -93,14 +135,47 @@ Create a 6 × 6 ndarray named S containing the squares of the first 36 positive 
 
 The following function and methods were used in this problem:
 - `np.arange(a, b, c)` - used to get the integers from a up to b (excluding b) and in c increments
+    Example:
+  ```python
+  a = np.arange(3,10,3)
+  a
+
+  #result: array([3, 6, 9])
+  ```
 
 - `.reshape(a,b)` - rearranges array to a rows and b columns
+    Example:
+  ```python
+  b = np.array([(1,2,3),(4,5,6)])
+  b = b.reshape(6,1).shape
+  b
 
+  #result: (6, 1)
+  ```
+  
 - `np.mean()` - built in function used to get the arithmetic mean of the chosen variable
+    Example:
+  ```python
+  c = int(np.mean(a))
+  c
+
+  #result: 6
+  #int was used to make the result as integer / whole number
+  ```
 
 - `A[equation]` - boolean condition where gets the A array and evaluates the equation enclosed in square brackets which will produce boolean values in the exact shape of A.
+    Example:
+  ```python
+  c = np.array([(1,2,3),(4,5,6)])
+  d = c[c > 3]
+    #[(False, False, False), (True, True, True)]
 
-- `np.save(a,b)` - used to save an array to a binary file in .npy format
+  print(d)
+
+  #result: [4 5 6]
+  ```
+  
+- `np.save('file name', array)` - used to save an array to a binary file in .npy format
 
 These methods were used to create a single function that gets the square of the first 36 positive integers in a 6 × 6 ndarray and filters the elements that are greater than the mean.
 ```python
