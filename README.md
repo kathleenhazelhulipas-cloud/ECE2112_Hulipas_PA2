@@ -32,7 +32,8 @@ The following function and methods were used in this problem:
 - `np.random.seed()` - used to initialize the random number generator
   
 - `np.mean()` - built in function used to get the arithmetic mean of the chosen variable
-     Example:
+
+  Example:
   ```python
   a = np.array([1,2,3])
   b = int(np.mean(a))
@@ -43,7 +44,8 @@ The following function and methods were used in this problem:
   ```
 
 - `np.std()` - built in function used to get the standard deviation of the chosen variable
-     Example:
+
+  Example:
   ```python
   c = int(np.std(a))
   c
@@ -82,7 +84,8 @@ Use a Boolean condition on C to obtain every cubed value divisible by 4. Store t
 
 The following function and methods were used in this problem:
 - `np.arange(a, b, c)` - used to get the integers from a up to b (excluding b) and in c increments
-    Example:
+
+  Example:
   ```python
   a = np.arange(2,10,2)
   a
@@ -91,7 +94,8 @@ The following function and methods were used in this problem:
   ```
 
 - `.reshape(a,b)` - rearranges array to a rows and b columns
-      Example:
+
+  Example:
   ```python
   b = np.array([(1,2,3),(4,5,6)])
   b = b.reshape(6,1).shape
@@ -101,7 +105,8 @@ The following function and methods were used in this problem:
   ```
 
 - `A[equation]` - boolean condition where gets the A array and evaluates the equation enclosed in square brackets which will produce boolean values in the exact shape of A.
-    Example:
+
+  Example:
   ```python
   c = np.array([(1,2,3),(4,5,6)])
   d = c[c % 3 == 0]
@@ -135,7 +140,8 @@ Create a 6 × 6 ndarray named S containing the squares of the first 36 positive 
 
 The following function and methods were used in this problem:
 - `np.arange(a, b, c)` - used to get the integers from a up to b (excluding b) and in c increments
-    Example:
+
+  Example:
   ```python
   a = np.arange(3,10,3)
   a
@@ -144,7 +150,8 @@ The following function and methods were used in this problem:
   ```
 
 - `.reshape(a,b)` - rearranges array to a rows and b columns
-    Example:
+
+  Example:
   ```python
   b = np.array([(1,2,3),(4,5,6)])
   b = b.reshape(6,1).shape
@@ -154,7 +161,8 @@ The following function and methods were used in this problem:
   ```
   
 - `np.mean()` - built in function used to get the arithmetic mean of the chosen variable
-    Example:
+
+  Example:
   ```python
   c = int(np.mean(a))
   c
@@ -164,7 +172,8 @@ The following function and methods were used in this problem:
   ```
 
 - `A[equation]` - boolean condition where gets the A array and evaluates the equation enclosed in square brackets which will produce boolean values in the exact shape of A.
-    Example:
+
+  Example:
   ```python
   c = np.array([(1,2,3),(4,5,6)])
   d = c[c > 3]
